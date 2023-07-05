@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-const adminSchema = require('./admin')
-const postSchema = require('./post')
-const userAccountSchema = require('./userAccount')
+const adminSchema = require('./Admin')
+const postSchema = require('./Post')
+const userAccountSchema = require('./UsserAccount')
 
 
 const Admin = mongoose.model('Admin', adminSchema)
@@ -11,5 +11,5 @@ const UserAccount = mongoose.model('UserAccount', userAccountSchema)
 module.exports = {
     Admin,
     Post,
-    UserAccount 
+    UserAccount
 }
